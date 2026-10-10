@@ -2,6 +2,8 @@
 
 **Touch Grass Safely & Responsibly** — A multimodal outdoor field guide, trail pre-flight safety analyzer, and flora/fauna hazard identification web application powered by the **Gemini Interactions API** (`@google/genai` >= 2.28.0), **Gemini 3.8 Flash**, **Gemini 3.5 Flash-Lite**, and open-weight **Gemma 4** (`gemma-4-31b-it` / `gemma-4-26b-a4b-it`).
 
+🚀 **Live Demo (Deployed on Render):** **[TrailSense: Touch Grass Safely — Moss & Granite Field Guide](https://trailsense.onrender.com/)**
+
 ---
 
 ## ✨ Features
