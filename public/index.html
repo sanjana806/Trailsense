@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrailSense: Touch Grass Safely — Moss &amp; Granite Field Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    if (window.tailwind) {
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              forest: '#1C3F2E',
+              hunter: '#2D5A43',
+              lichen: '#E3B341',
+              terracotta: '#C86D51',
+              parchment: '#F9F8F3',
+              granite: '#2C3333',
+              sandline: '#E2DFD2',
+            },
+            fontFamily: {
+              serif: ['Fraunces', 'Georgia', 'serif'],
+              sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+          },
+        },
+      };
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-topo-parchment text-granite antialiased">
+  <div id="root"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

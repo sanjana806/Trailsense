@@ -1,0 +1,26 @@
+{
+  "name": "trailsense-ai",
+  "version": "1.0.0",
+  "description": "TrailSense AI Field Guide — Multimodal Trail Pre-Flight Check & Flora/Fauna Safety Assistant powered by Gemini 3.8 Flash and Gemma 4",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "gemini",
+    "gemma",
+    "trailsense",
+    "outdoors",
+    "hiking",
+    "field-guide",
+    "multimodal",
+    "hacktoberfest"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.28.0",
+    "express": "^4.21.2"
+  }
+}

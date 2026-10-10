@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --forest-emerald: #1C3F2E;
+  --hunter-green: #2D5A43;
+  --sunlit-gold: #E3B341;
+  --terracotta-amber: #C86D51;
+  --warm-parchment: #F9F8F3;
+  --muted-granite: #2C3333;
+  --border-sand: #E2DFD2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--warm-parchment);
+  color: var(--muted-granite);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.font-serif-organic {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-mono-field {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Subtle Topographic Contour Line Vector Backdrop */
+.bg-topo-parchment {
+  background-color: #F9F8F3;
+  background-image: url("data:image/svg+xml,%3Csvg width='240' height='240' viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 C60 10, 120 70, 240 30 M0 95 C80 65, 150 130, 240 85 M0 155 C70 120, 160 190, 240 150 M0 210 C90 180, 170 230, 240 205' stroke='%23E2DFD2' stroke-width='1.15' fill='none' opacity='0.65'/%3E%3Cpath d='M40 0 C15 70, 85 150, 35 240 M135 0 C100 80, 175 160, 125 240 M205 0 C180 90, 225 170, 195 240' stroke='%23E2DFD2' stroke-width='0.85' fill='none' opacity='0.45'/%3E%3C/svg%3E");
+}
+
+.bg-topo-forest {
+  background-color: #1C3F2E;
+  background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 35 C50 5, 110 65, 200 25 M0 90 C70 60, 130 120, 200 80 M0 150 C60 115, 140 175, 200 140' stroke='%232D5A43' stroke-width='1.2' fill='none' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+/* Soft Glassmorphism Cards */
+.glass-parchment {
+  background: rgba(249, 248, 243, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid #E2DFD2;
+}
+
+.glass-forest {
+  background: rgba(28, 63, 46, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 223, 210, 0.18);
+}
+
+/* Polaroid Field Card */
+.polaroid-card {
+  background: #FFFFFF;
+  border: 1px solid #E2DFD2;
+  box-shadow:
+    0 14px 32px -8px rgba(28, 63, 46, 0.14),
+    0 4px 10px -2px rgba(44, 51, 51, 0.08);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow:
+    0 20px 38px -10px rgba(28, 63, 46, 0.2),
+    0 6px 14px -3px rgba(44, 51, 51, 0.1);
+}
+
+/* Masking Tape Accent on Polaroid */
+.specimen-tape {
+  background: rgba(227, 179, 65, 0.28);
+  border-left: 1px dashed rgba(200, 109, 81, 0.35);
+  border-right: 1px dashed rgba(200, 109, 81, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+/* Smooth SVG Gauge Arc Animation */
+.gauge-arc {
+  transition: stroke-dashoffset 0.65s cubic-bezier(0.22, 1, 0.36, 1), stroke 0.35s ease;
+}
+
+/* Custom Checkbox Styling */
+.moss-checkbox {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #2D5A43;
+  border-radius: 0.375rem;
+  background-color: #F9F8F3;
+  display: inline-grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.moss-checkbox::before {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #F9F8F3;
+  transform-origin: center;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.moss-checkbox:checked {
+  background-color: #2D5A43;
+  border-color: #1C3F2E;
+}
+
+.moss-checkbox:checked::before {
+  transform: scale(1);
+}
+
+/* Dropzone Hover Pulse */
+.dropzone-card {
+  transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dropzone-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5C0B0;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D5A43;
+}
